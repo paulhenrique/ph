@@ -1,0 +1,5 @@
+@each $type_cursor in 'auto','crosshair','default','pointer','move','e-resize','ne-resize','-resize','n-resize','se-resize','sw-resize','s-resize','w-resize','text','wait','help','progress' {
+	.cursor-#{$type_cursor}{
+		cursor:#{$type_cursor} !important;
+	}
+}
