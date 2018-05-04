@@ -1,4 +1,4 @@
-@for $i from 1 through 25 {
+@for $i from 0 through 25 {
 	.m-#{$i}{
 		margin:#{$i}rem !important;
 	}
@@ -45,4 +45,7 @@
 	.pr-#{$i}{
 		padding-right: #{$i}rem !important;
 	}	
+}
+.mx-auto{
+	margin:auto !important;
 }
