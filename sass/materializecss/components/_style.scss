@@ -44,4 +44,16 @@
 		@include diagonal-border-top(#212121);
 	}
 }
+.pre-galery{
+	position: relative;
+	&::before {
+		@include diagonal-border-top(#B71C1C);
+	}
+	&::after{
+		@include diagonal-border-bottom(#B71C1C);
+	}
+}
 
+nav .gama-nav{ 
+	background-color: black !important;
+}
