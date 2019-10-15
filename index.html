@@ -3,7 +3,6 @@
 	<title>Paulo Herique - Devepment and Design</title>
 	
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">	
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -37,10 +36,12 @@
 	<meta http-equiv="Cache-Control" content="no-cache">
 	<meta http-equiv="imagetoolbar" content="no" />
 	<!-- folhas de estilo -->
-	<link rel="stylesheet" type="text/css" href="css/st.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
+	<script src="https://kit.fontawesome.com/9f635a5f2f.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
 	<link rel="icon" sizes="192x192" href="img/logo.png">
@@ -55,22 +56,124 @@
 	<link rel="manifest" href="manifest.json">
 </head>
 <body class="">
-	<div class="container mt-5 pt-5">
-		<div class="row justify-content-center">
-			<div class="col-md-3">
-				<img src="img/me2.jpg" class="img-fluid paulo">
+	<style type="text/css">
+		*{
+			font-family: 'Noto Sans', sans-serif;
+		}
+		h1{
+			font-family: 'Noto Sans', sans-serif;
+			font-size: 31.2rem;
+			line-height: 110%;
+			margin: 2.8rem 0 1.68rem 0;
+			font-weight: 100;
+			text-shadow: 7px 11px 18px #00000026;
+		}
+		.container{
+			position: relative;
+			width: 80%;
+		}
+		.container p.spaced{
+			position: relative;
+			left: 3.2rem;
+			font-size: 1rem;
+			top: -4rem;
+			letter-spacing: 1rem;
+			text-transform: uppercase;
+			text-shadow: 5px 5px 10px #00000073;
+		}
+
+		.contact-box{
+			position: absolute;
+			right: 0;
+			height: 100%;
+			width: 48%;
+			padding: 3rem;
+			padding-top: 6rem;
+			text-align: left;
+			border-radius: 11px;
+		}
+		.contact-box h2{
+			font-size: 2.5rem;
+			font-weight: 900;
+		}
+		.contact-box p{
+			font-size: 1.3rem;
+		}
+		.strong{
+			font-weight: 700;
+		}
+		.redes-sociais ul li{
+			list-style: none;
+			display: inline-block;
+			font-size: 3rem;
+			margin: auto .5rem;
+			color: #0caaff;
+		}
+		.redes-sociais{
+			/*padding: .5rem;*/
+			margin: auto;
+		}
+
+		.btn, .btn-large{
+			background:#0caaff;	
+		}
+		.btn:hover, .btn-large:hover{
+			background: #4ab0e7;
+		}
+		.btn-floating{
+			position: fixed;
+			right: 2rem;
+			bottom: 2rem;
+		}
+		.redes-sociais ul li a, h1{
+			color: #0caaff;	
+		}
+		.iluminate{
+			background:#171717;
+			color:white;
+		}
+		.iluminate .redes-sociais ul li a,.iluminate h1{
+			color: red;	
+		}
+		.iluminate .btn, .iluminate .btn-large{
+			background:red;	
+		}
+		.iluminate .btn:hover,.iluminate .btn-large:hover{
+			background: red;
+		}
+		body{
+			transition: .99s all ease-out;
+		}
+	</style>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="contact-box">
+				<h2>Olá, meu site ainda <br> está em construção...</h2>
+				<p class="content-concat">Mas você pode entrar em contato comigo de outras formas!</p>
+				<div class="redes-sociais">
+					<p><span id="redes-sociais" class="strong">Pelas Redes Sociais</span></p>
+					<ul>
+						<li><a href="https://facebook.com/paulhenriquev" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="https://wa.me/5515997088134?text=Olá,%20Paulo%20estou%20entrando%20em%20contato%20pelo%20seu%20site!" target="_blank"><i class="fab fa-whatsapp-square"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/paulhenriquev/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+					</ul>
+					<a href="mailto:phvcandido@gmail.com" class='btn btn-large'>Ou por e-mail</a>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<h1 class="mt-5 no_bold">Paulo Henrique <br><small>ou @paulhenrique</small></h1>
-				<p class="">Músico, Designer, Programador, futuro Físico e apaixonado por Café</p>
-			</div>	
+			<h1 class="">PH</h1>
+			<p  class="spaced">design and development</p>
+
 		</div>
-		<div class="row text-justify mt-5 pt-5 justify-content-center">
-			<div class="col-md-7 text-center">
-				<h1>Quem eu sou</h1>
-				<p class="mt-3 text-justify">Nasci e vivo em Itapetininga, interior de São Paulo, onde cresci e aprendi muito do que sei hoje. A arte entrou em minha vida através da música, aos 9 anos a fiz, foi quando a conheci de verdade, me apaixonei e hoje não vivo sem ela. Em algum momento da vida fuçando o computador antigo que tinha em casa conheci algum software gráfico, de lá pra cá estudei e hoje considero que sei alguma coisa de Design Gráfico rs , quando vi as pessoas já me ofereciam dinheiro para que fizesse as coisas que eu fazia para elas e então estudei mais. <br> Desde sempre fui apaixonado por informática e computadores e no IFSP de Itapetininga encontrei uma verdadeira paixão por programação e principalmente programação Web, foi então que juntei a paixão pela arte e código e foquei em Web Design; O futuro nunca para, por isso não podemos parar em um degrau apenas, mas sim avançar; </p>
-			</div>
-		</div>
+		<a class="btn-floating right btn-large" id="turn-off"><i class="material-icons">emoji_objects</i></a>
 	</div>
 </body>
+<script type="text/javascript">
+	$("#turn-off").click(function(){
+		$('body').toggleClass("iluminate");	
+	});
+
+	setTimeout( function(){
+		$('body').toggleClass("iluminate");
+	}, 2000);
+</script>
 </html>
